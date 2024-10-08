@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using SpreadsheetEvaluator.Application.Enums;
 using SpreadsheetEvaluator.Domain;
+using SpreadsheetEvaluator.Domain.Configuration;
 using SpreadsheetEvaluator.Domain.Interfaces;
 using SpreadsheetEvaluator.Domain.Models.Responses;
 using SpreadsheetEvaluator.Domain.Utilities;
@@ -64,9 +65,10 @@ namespace SpreadsheetEvaluator.Application
             }
             catch(Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine(Constants.UserMessages.FailedToReadInputFile, inputFilePath, ex.Message);
                 return (int)ExitCode.ErrorReadingInputFile;
             }
+            Console.WriteLine(Constants.UserMessages.InputFileReadSuccessfully, inputFilePath, outputFilePath);
 
             // 2. Parse Json object to actual jobs list that we can use.
             var createdJobs = _spreadsheetCreationService.Create(jobsGetRawResponse);
@@ -87,15 +89,17 @@ namespace SpreadsheetEvaluator.Application
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine(Constants.UserMessages.OutputFileCreationFailure, outputFilePath, ex.Message);
                 return (int)ExitCode.ErrorWritingOutputFile;
             }
 
+            Console.WriteLine(Constants.UserMessages.OutputFileCreatedSuccessfully, outputFilePath);
             return (int)ExitCode.Success;
         }
 
         static int HandleParseError(IEnumerable<Error> errs)
         {
+            Console.WriteLine(Constants.UserMessages.FailedToParseArgs);
             return (int)ExitCode.ErrorParsingArguments;
         }
     }

@@ -106,6 +106,16 @@ namespace SpreadsheetEvaluator.Domain.Configuration
         {
             public const string FailedToGetJobs = "Failed to GET jobs from the Hub Api. Message: {0}.";
             public const string FailedToPostJobs = "Failed to POST jobs to the Hub Api. Message: {0}, Server Response: {1}.";
+
+        }
+
+        public struct UserMessages
+        {
+            public const string OutputFileCreatedSuccessfully = "Output file {0} was created successfully.";
+            public const string OutputFileCreationFailure = "We failed to create the output file {0}, because: {1}";
+            public const string FailedToParseArgs = "We failed to parse arguments.";
+            public const string FailedToReadInputFile = "We failed to read from the nput file {0}, because: {1}";
+            public const string InputFileReadSuccessfully = "We read input file {0} successfully. ";
         }
     }
 }
