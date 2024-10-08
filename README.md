@@ -10,9 +10,9 @@
 - [About](#about)
   - [Built With](#built-with)
 - [Features](#features)
+- [Example data](#example-data)
 - [Usage](#usage)
-    - [Manual setup](#manual-setup)
-    - [System Design](#system-design)
+- [System Design](#system-design)
 - [Screenshots](#screenshots)
 - [License](#license)
 
@@ -60,12 +60,15 @@ Now, it uses CLI to ask for input and ouput files.
   <li>We use AAA (Act-Arrange-Assert) structure for our tests.</li>
 </ul>
 
+### Example data
+
+You can find both input and expected output files in the ```data``` folder.
+
+
 ### Usage
 
-#### Manual setup
 
-
-#### System Design
+### System Design
 
 You can find System Design notes in the Product Search.pdf file.
 
