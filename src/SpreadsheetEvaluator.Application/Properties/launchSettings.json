@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SpreadsheetEvaluator.Application": {
+      "commandName": "Project",
+      "commandLineArgs": "-i \"C:\\Users\\Gintautas\\source\\repos\\wix-grow-developers-task\\tests\\SpreadsheetEvaluator.UnitTests\\Resources\\JobsRaw.json\" -o \"C:\\Users\\Gintautas\\source\\repos\\wix-grow-developers-task\\tests\\SpreadsheetEvaluator.UnitTests\\Resources\\JobsOutput2.json\""
+    }
+  }
+}
