@@ -210,10 +210,10 @@ You can find System Design notes in the Product Search.pdf file.
 
 ## Screenshots
 
-<img src="docs/screenshots/capture1.JPG" width="500" height="300"><br>
+<img src="docs/screenshots/Capture1.JPG" width="500" height="300"><br>
 Successfully running the console app with arguments.
 
-<img src="docs/screenshots/capture2.JPG" width="500" height="300"><br>
+<img src="docs/screenshots/Capture2.JPG" width="500" height="300"><br>
 Argument validation present when a required argument is not present.
 
 [![Video demo](https://img.youtube.com/vi/7gRpbvYju30/0.jpg)](https://youtu.be/7gRpbvYju30)<br>
