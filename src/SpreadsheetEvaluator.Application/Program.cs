@@ -76,7 +76,7 @@ namespace SpreadsheetEvaluator.Application
             // 3. Compute formulas for cells.
             var referencedJobs = _spreadsheetReferenceService.ReplaceReferences(createdJobs);
 
-            // 4. Computed Formulas. Before this, they are in "5 + 6" string state.
+            // 4. After references are created ( "5 + 6" ), compute them to a single value.
             var computedJobs = _computeCellServiceInterface.ComputeCells(referencedJobs);
 
             // 5. Create a post request to help us with the output file's json structure.
