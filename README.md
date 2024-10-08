@@ -13,7 +13,6 @@
 - [Features](#features)
 - [Example data](#example-data)
 - [Usage](#usage)
-- [System Design](#system-design)
 - [Screenshots](#screenshots)
 - [License](#license)
 
@@ -199,14 +198,6 @@ You can find both input and expected output files in the ```data``` folder.
     ```shell
     dotnet run -i "path to the InputJobs.json" -o "path to the output file.json"
     ```
-
-
-
-
-### System Design
-
-You can find System Design notes in the Product Search.pdf file.
-
 
 ## Screenshots
 
